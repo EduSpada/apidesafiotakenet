@@ -7,11 +7,11 @@ const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest
 const app = express()
 
 app.use(morgan('dev'))
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(cors())
 
-function doGet(url){
+function doGet(url) {
     let request = new XMLHttpRequest()
     request.open("GET", url, false)
     request.send()
@@ -30,14 +30,15 @@ function filter(language) {
     var dadosF = {}
     var chave = 0
     for (var i = 0; i < qt; i++) {
-        if (language == dados[i].language){
+        if (language == dados[i].language) {
             chave++
-            chaveId = "id"+chave
-            dadosF[dados[i].id] = {descripition:dados[i].description
-                    , name: dados[i].full_name
-                    , avatar: dados[i].owner.avatar_url
-                    , created_at: dados[i].created_at
-                }
+            chaveId = "id" + chave
+            dadosF[dados[i].id] = {
+                descripition: dados[i].description
+                , name: dados[i].full_name
+                , avatar: dados[i].owner.avatar_url
+                , created_at: dados[i].created_at
+            }
         }
     }
     return dadosF
