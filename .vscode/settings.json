@@ -1,0 +1,8 @@
+{
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/10e0d2b6-57d7-49ed-b26f-46b1933fbfd2/resourceGroups/DefaultResourceGroup-CQ/providers/Microsoft.Web/sites/APIgitTakenet"
+}
