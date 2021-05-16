@@ -1,19 +1,26 @@
 {
-  "name": "node",
+  "name": "apidesafiotakenet",
   "version": "1.0.0",
-  "description": "API desafio TakeNet",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "dev": "next dev"
   },
-  "author": "Eduardo Rodrigo Spada",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduSpada/apidesafiotakenet.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduSpada/apidesafiotakenet/issues"
+  },
+  "homepage": "https://github.com/EduSpada/apidesafiotakenet#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.7",
-    "xmlhttprequest": "^1.8.0"
+    "install": "^0.13.0",
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
